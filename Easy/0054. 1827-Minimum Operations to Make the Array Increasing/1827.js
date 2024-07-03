@@ -9,8 +9,6 @@ var minOperations = function (nums) {
         }
     }
 
-    nums;
-
     return count;
 };
 
