@@ -1,5 +1,5 @@
 var arrayPairSum = function (nums) {
-    let correctNums = nums.sort((a, b) => a - b);
+    nums.sort((a, b) => a - b);
 
     let sum = 0;
 
