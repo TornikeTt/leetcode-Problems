@@ -5,8 +5,6 @@ var mergeNodes = function (head) {
     let prev = head;
     let sum = 0;
 
-    let newHead = [];
-
     while (prev.next !== null) {
         prev = prev.next;
 
