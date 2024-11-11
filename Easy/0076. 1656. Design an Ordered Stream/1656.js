@@ -22,5 +22,3 @@ console.log(os.insert(1, "aaaaa")); // Output: ["aaaaa"]
 console.log(os.insert(2, "bbbbb")); // Output: ["bbbbb", "ccccc"]
 console.log(os.insert(5, "eeeee")); // Output: []
 console.log(os.insert(4, "ddddd")); // Output: ["ddddd", "eeeee"]
-
-console.log(os.list);
