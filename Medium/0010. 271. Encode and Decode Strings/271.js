@@ -46,7 +46,7 @@ class Solution {
             sizes.push(parseInt(cur));
             i++;
         }
-        sizes;
+        //sizes = [4, 4, 4, 3];
 
         i++;
         // i = 9
