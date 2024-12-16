@@ -1,8 +1,8 @@
 var threeSum = function (nums) {
     nums.sort((a, b) => a - b);
     const res = [];
-
     // nums = [ -4, -1, -1, 0, 1, 2, 2 ]
+    // nums 2 = [ -2, 0, 0, 2, 2 ]
     for (let i = 0; i < nums.length; i++) {
         /* 
             If nums[i] > 0, then all subsequent elements 
@@ -22,10 +22,10 @@ var threeSum = function (nums) {
             the outer loop iterations.
         */
         if (i > 0 && nums[i] === nums[i - 1]) continue;
-
         let left = i + 1;
         let right = nums.length - 1;
         // nums = [ -4, -1, -1, 0, 1, 2, 2 ]
+        // nums 2 = [ -2, 0, 0, 2, 2 ]
         while (left < right) {
             const sum = nums[i] + nums[left] + nums[right];
             if (sum > 0) {
@@ -55,8 +55,9 @@ var threeSum = function (nums) {
             }
         }
     }
-
-    return res; // [-4, 2, 2], [-1, -1, 2], [-1, 0, 1];
+    // 1 - [-4, 2, 2], [-1, -1, 2], [-1, 0, 1];
+    // 2 - [ -2, 0, 2 ]
+    return res;
 };
 
 threeSum([-4, -1, -1, 0, 1, 2, 2]);
