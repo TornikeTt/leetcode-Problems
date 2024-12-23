@@ -12,7 +12,10 @@ var maxArea = function (height) {
         */
 
         const area = Math.min(height[left], height[right]) * (right - left);
-        // 8 49 18 40 24 6 10 4
+        /*   
+            Area is calculated from the formula: height × length
+            8 49 18 40 24 6 10 4
+        */
         res = Math.max(res, area);
         if (height[left] <= height[right]) {
             left++;
