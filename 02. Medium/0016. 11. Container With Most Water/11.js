@@ -10,11 +10,9 @@ var maxArea = function (height) {
             1. Height is the minimum height between the two lines.
             2. Length is the distance between the two lines.
         */
-
         const area = Math.min(height[left], height[right]) * (right - left);
         /*   
-            Area is calculated from the formula: height × length
-            8 49 18 40 24 6 10 4
+            area = 8 49 18 40 24 6 10 4
         */
         res = Math.max(res, area);
         if (height[left] <= height[right]) {
@@ -23,7 +21,6 @@ var maxArea = function (height) {
             right--;
         }
     }
-
     return res;
 };
 
