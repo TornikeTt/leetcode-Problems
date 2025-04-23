@@ -22,3 +22,4 @@ function isValid(s) {
 }
 
 isValid("()[]{}")
+isValid("([])")
